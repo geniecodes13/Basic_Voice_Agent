@@ -1,0 +1,25 @@
+# Please make sure to have this(specially python 3.12) 
+# Stack: RealtimeSTT -> Ollama -> PyKokoro
+# Python 3.10 / 3.11 / 3.12 
+# and also make sure you have espeak-ng installed too, kokoro will not work without that
+
+# Core STT & Audio Input
+RealtimeSTT[faster-whisper]>=0.3.5
+pyaudiowpatch>=0.2.12.6; sys_platform == 'win32'
+pyaudio>=0.2.14; sys_platform != 'win32'
+webrtcvad-wheels>=2.0.10.post1; sys_platform == 'win32'
+
+# Brain / LLM Integration
+ollama>=0.1.30
+
+# Neural TTS Engine
+pykokoro[cpu]>=0.3.0
+
+# Audio Playback & Array Processing
+sounddevice>=0.4.6
+numpy>=1.24.0
+
+# Build & System Utilities
+setuptools>=68.0.0
+wheel>=0.41.0
+
