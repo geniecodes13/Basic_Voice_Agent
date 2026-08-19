@@ -1,4 +1,4 @@
-# Please make sure to have this(specially python 3.12) 
+# install (specially python 3.12) 
 # Stack: RealtimeSTT -> Ollama -> PyKokoro
 # Python 3.10 / 3.11 / 3.12 
 # and also make sure you have espeak-ng installed too, kokoro will not work without that
